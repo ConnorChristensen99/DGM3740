@@ -1,0 +1,61 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MAIN STYLING */
+#header {
+    max-width: 1450px;
+    margin: auto;
+}
+
+
+/* PRE NAV STYLING */
+#header, #navHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header {
+    background-color: beige;
+    padding: 2%;
+}
+#header p {
+    font-size: xx-large;
+    margin-bottom: -30px;
+}
+
+/* NAV STYLING */
+nav {
+    background-color: bisque;
+    width:100%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-width: 1280px;
+    margin: auto;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    display: block;
+    color: rgb(14, 1, 1);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    background-color: rgb(139, 80, 80);
+  }
+  #searchBar {
+    position: absolute;
+    padding: 1%;
+    right: 165px;
+    height: 6px;
+  }
