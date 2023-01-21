@@ -1,3 +1,8 @@
+/* VARIABLES */
+:root {
+  --main-grey: rgb(133, 133, 133, .7);
+}
+
 /* RESET */
 * {
     margin: 0;
@@ -6,7 +11,7 @@
 
 
 /* MAIN STYLING */
-#header {
+#header, #body, #myFooter {
     max-width: 1450px;
     margin: auto;
 }
@@ -58,4 +63,55 @@ nav ul {
     padding: 1%;
     right: 165px;
     height: 6px;
+  }
+
+  /* BODY STYLING */
+  #articleSquares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .square {
+    width: 22%;
+    margin: .5rem;
+    border: 1px solid var( --main-grey);
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column-reverse;
+  }
+  .square:after {
+    content: "";
+    display: block;
+    padding-bottom: 65%;
+  }
+  .paraContent {
+    text-align: center;
+    padding: .5rem;
+  }
+  .dateContent {
+    text-align: left;
+    padding: .5rem;
+    color: white;
+  }
+  .scrim {
+    background-color: var( --main-grey);
+  }
+
+  /* FOOTER STYLING */
+  #myFooter {
+    text-align: center;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+  #informationFooter:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #informationFooter {
+    background-color: beige;
+    display: flex;
+    justify-content: space-evenly;
   }
