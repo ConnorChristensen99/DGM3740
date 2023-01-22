@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabot Cruizes</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css/style.css">
 </head>
 
@@ -14,13 +16,15 @@
 
 <!-- Header -->
 <div id="header">
-<img src="#" alt="logo">
+<img id="headerLogo" src="#" alt="logo">
 <p>1-800-555-1234</p>
 </div>
 
 <!-- NAV -->
 
 <div id="navHeader">
+ 
+  <div id="navItems">
 <nav>
     <ul>
     <li><a href="#">Home</a></li>
@@ -30,14 +34,28 @@
     </ul>
   </nav>
 
-  <input id = "searchBar" type="text" placeholder="Search..">
+  <input id = "searchBar" type="search" placeholder="Search..">
+</div>
+
 </div>
 
 <!-- START BODY -->
 <body>
 <div id="body">
   <!-- SLIDER OF IMAGES -->
-  <h1>Slider Here</h1>
+<div class="swiper">
+  <div class="swiper-wrapper">
+
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="images/example2.jfif"></div>
+    <div class="swiper-slide"><img src="images/example2.jfif"></div>
+    <div class="swiper-slide"><img src="images/example.jpg"></div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+  </div>
+
+
     
   <!-- START ARTICLE SQUARES -->
   <h2>Recent Blog Articles</h2>
@@ -65,47 +83,62 @@
 </div>
 
 </div>
-</body>
+
 
 <!-- BEGIN FOOTER -->
 <div id="informationFooter">
+  <div id="innerFooter">
   <div id="contactUs" class="column">
-    <h3>Contact Us</h3>
-    <h4>CABOT CRUIZES</h4>
-    <h5>23 South Main St. Suite 16 <br>
-      Lexington, VA 24450</h5>
-      <h4>Phone:</h4>
-      <h5>1-800-555-1234</h5>
-      <h4>Hours of Operation:</h4>
-      <h5>Monday - Friday 9am - 4pm</h5>
+    <h1 id="footerHead">Contact Us</h1></br>
+    <h2>CABOT CRUIZES</h2>
+    <h4 id="footerPara">23 South Main St. Suite 16 <br>
+      Lexington, VA 24450</h4>
+      <h2>Phone:</h2>
+      <h4 id="footerPara">1-800-555-1234</h4>
+      <h2>Hours of Operation:</h2>
+      <h4 id="footerPara">Monday - Friday 9am - 4pm</h4>
   </div>
 
   <div id="newsLetter" class="column">
-    <h3>Contact Us</h3>
+    <h1 id="footerHead">News Letter</h1></br>
     <p>Subscribe to our email list and stay up-to-date with our
       ho6est offers and latest specials.</p>
-      <input type="text" placeholder="example@example.com">
-      <button>Subscribe</button>
+      <div id="newsLetterItems">
+      <input id = "newsLetterInput" type="text" placeholder="example@example.com">
+      <button type ="submit" id="subscribeButton">Subscribe</button>
+    </div>
   </div>
 
   <div id="whyCabot" class="column">
-    <h3>Why Cabot Cruises</h3>
-    <p>Cabot Cruises is a travel agency providing the best cruise
+    <h1 id="footerHead">Why Cabot Cruises</h1></br>
+    <p id="footerPara">Cabot Cruises is a travel agency providing the best cruise
       deals on our online travel website. We can help you with all
-      inclusive vacaMons including discounted cruises.</br>
+      inclusive vacaMons including discounted cruises.</br></br>
       <b>We do not sell travel to residents of Delaware, Iowa,
       Florida, Hawaii and Washington state because those states
       are just wierd. If you are a resident of one of these states,
       call your congressman and tell them to change the
       regulaMons.</b></p>
   </div>
-
+</div>
 </div>
 
 <!-- SOCIAL ICONS -->
-<div id="socialIcons"></div>
+<div id="socialIcons">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-pinterest"></a>
+  <a href="#" class="fa fa-twitter"></a>
+</div>
+</main>
 
 <!-- FINAL FOOTER -->
+<footer>
 <p id="myFooter"> &copy Connor Christensen</p>
-</main>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="scripts.js"></script>
+</body>
 </html>

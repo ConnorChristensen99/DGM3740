@@ -11,32 +11,39 @@
 
 
 /* MAIN STYLING */
-#header, #body, #myFooter {
-    max-width: 1450px;
+#header, #body, #navItems, #myFooter, #innerFooter {
+    max-width: 1200px;
     margin: auto;
 }
 
 
 /* PRE NAV STYLING */
-#header, #navHeader {
+#header {
     display: flex;
     justify-content: space-between;
+}
+#navHeader {
+  width: 100%;
+  background-color: bisque;
 }
 
 #header {
     background-color: beige;
-    padding: 2%;
+    padding: 2% 0 2% 0;
 }
 #header p {
     font-size: xx-large;
     margin-bottom: -30px;
 }
 
+
+
 /* NAV STYLING */
-nav {
-    background-color: bisque;
-    width:100%;
+#navItems {
+  display: flex;
+  justify-content: space-between;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -58,18 +65,14 @@ nav ul {
   nav ul li a:hover {
     background-color: rgb(139, 80, 80);
   }
-  #searchBar {
-    position: absolute;
-    padding: 1%;
-    right: 165px;
-    height: 6px;
-  }
+
 
   /* BODY STYLING */
   #articleSquares {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 2rem;
   }
   .square {
     width: 22%;
@@ -97,6 +100,8 @@ nav ul {
     background-color: var( --main-grey);
   }
 
+
+
   /* FOOTER STYLING */
   #myFooter {
     text-align: center;
@@ -115,3 +120,60 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
   }
+  #footerHead {
+    padding-top: .5rem;
+  }
+  #footerPara {
+    padding-bottom: 1rem;
+  }
+  #newsLetterItems {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: .25rem;
+  }
+  #subscribeButton {
+    background-color:rgb(184, 144, 144);
+    color: white;
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 10px;
+    border: none;
+  }
+  #newsLetterInput {
+    padding: .5rem;
+  }
+  #subscribeButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(110, 110, 110, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  #subscribeButton:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(185, 185, 185, 0.6);
+}
+
+#socialIcons {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.fa {
+  margin: 0 .5rem 0 .5rem;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #55ACEE;
+  color: white;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+/* SLIDER STYLING */
+.swiper {
+  width: 100%;
+  height: auto;
+}
