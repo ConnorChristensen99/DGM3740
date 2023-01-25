@@ -21,7 +21,7 @@
 #header {
     display: flex;
     justify-content: space-between;
-    max-height: 30px;
+    align-items: flex-end;
 }
 #navHeader {
   width: 100%;
@@ -29,12 +29,10 @@
 }
 
 #header {
-    background-color: beige;
-    padding: 2% 0 2% 0;
+    padding: .5rem .5rem .5rem .5rem;
 }
 #header p {
     font-size: xx-large;
-    margin-bottom: -30px;
 }
 
 
@@ -69,15 +67,18 @@ nav ul {
 
 
   /* BODY STYLING */
+  #articleHeader {
+    padding-top: .5rem;
+  }
   #articleSquares {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
   }
   .square {
-    width: 22%;
-    margin: .5rem;
+    width: 40%;
+    margin: .25rem;
     border: 1px solid var( --main-grey);
     display: flex;
     align-content: flex-end;
@@ -107,10 +108,7 @@ nav ul {
   #myFooter {
     text-align: center;
   }
-  .column {
-    float: left;
-    width: 33.33%;
-  }
+  
   #informationFooter:after {
     content: "";
     display: table;
@@ -178,3 +176,100 @@ nav ul {
   width: 100%;
   height: auto;
 }
+
+
+
+
+
+
+/* MEDIA QUERY CHANGES */
+@media (min-width: 1200px) {
+  .square {
+    width: 20%;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+  #hamburgerBtn {
+    display: none;
+  }
+  #subList {
+    display: none;
+  }
+}
+
+@media (min-width: 468px) and (max-width: 1199px){
+  .square {
+    width: 30%;
+  }
+
+  .column {
+    float: left;
+  }
+
+  #hamburgerBtn {
+    display: none;
+  }
+  #subList {
+    display: none;
+  }
+}
+
+@media (max-width: 467px) {
+  #hamburgerBtn span:nth-child(1) {
+    display: block;
+  }
+  #hamburgerBtn span:nth-child(2) {
+    display: none;
+  }
+  
+  #hamburgerBtn.open span:nth-child(1) {
+    display: none;
+  }
+  #hamburgerBtn.open span:nth-child(2) {
+    display: block;
+  }
+  
+  #primaryNav {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+  }
+  #primaryNav.open {
+    height: auto;
+  }
+ #subList {
+    display: none;
+  }
+  #primaryNav:hover ul {
+    display: block;
+  }
+
+  #primaryNav li.parent > a::after {
+    content: "\25bc";
+    float: right;
+    font-size: .75rem;
+  }
+  #navItems {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+
+
+
+
+
+
+
+
+.invisible {
+  display: none;
+}
+

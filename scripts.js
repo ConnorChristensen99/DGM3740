@@ -13,3 +13,15 @@ const swiper = new Swiper('.swiper', {
         delay: 5000
     },
 })
+
+function toggleMenu() {
+  document.getElementById("hamburgerBtn").classList.toggle('open');
+  document.getElementById('primaryNav').classList.toggle('open')
+  document.getElementById('searchBar').classList.toggle('invisible')
+}
+
+var x = document.getElementById('hamburgerBtn');
+
+x.onclick = toggleMenu;
+
+

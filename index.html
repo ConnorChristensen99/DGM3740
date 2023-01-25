@@ -16,8 +16,12 @@
 
 <!-- Header -->
 <div id="header">
-<img id="headerLogo" src="images/example3.jpg" alt="logo">
-<p>1-800-555-1234</p>
+  <figure class="logo">
+    <img id="headerLogo" src="images/logo_1x.png" alt="logo"
+    srcset="images/logo_1x.png 1x, images/logo_2x.png 2x, images/logo_3x.png 3x">
+  </figure>
+
+<p >1-800-555-1234</p>
 </div>
 
 <!-- NAV -->
@@ -26,9 +30,19 @@
  
   <div id="navItems">
 <nav>
-    <ul>
+
+  <button id="hamburgerBtn">
+    <span><i>&equiv;</i>OPEN</span>
+    <span><i>&otimes;</i>CLOSE</span>
+  </button>
+  
+    <ul id="primaryNav">
     <li><a href="#">Home</a></li>
-    <li><a href="#">Cruises</a></li>
+    <li class="parent"><a href="#">Cruises</a></li>
+    <ul id="subList">
+      <li id="items"><a href="#">Sub Option 1</a></li>
+      <li id="items"><a href="#">Sub Option 2</a></li>
+    </ul>
     <li><a href="#">Agents</a></li>
     <li><a href="#">Book</a></li>
     </ul>
@@ -47,9 +61,10 @@
   <div class="swiper-wrapper">
 
     <!-- Slides -->
-    <div class="swiper-slide"><img src="images/example2.jfif"></div>
-    <div class="swiper-slide"><img src="images/example2.jfif"></div>
-    <div class="swiper-slide"><img src="images/example.jpg"></div>
+    <div class="swiper-slide"><img src="images/headers/header_large/header_1_large.jpg"></div>
+    <div class="swiper-slide"><img src="images/headers/header_large/header_2_large.jpg"></div>
+    <div class="swiper-slide"><img src="images/headers/header_large/header_3_large.jpg"></div>
+    <div class="swiper-slide"><img src="images/headers/header_large/header_4_large.jpg"></div>
   </div>
 
   <div class="swiper-pagination"></div>
@@ -58,24 +73,28 @@
 
     
   <!-- START ARTICLE SQUARES -->
-  <h2>Recent Blog Articles</h2>
+  <h2 id="articleHeader">Recent Blog Articles</h2>
 
   <div id="articleSquares">
 
 
   <div class="square">
+    <a href="#"><img src = "#"/></a>
     <p class="scrim dateContent">May 1, 2018</p>
     <p class="paraContent">Article Title Goes Here and may wrap to two lines.</p>
   </div>
   <div class="square">
+    <a href="#"><img src = "#"/></a>
     <p class="scrim dateContent">May 1, 2018</p>
     <p class="paraContent">Article Title Goes Here and may wrap to two lines.</p>
   </div>
   <div class="square">
+    <a href="#"><img src = "#"/></a>
     <p class="scrim dateContent">May 1, 2018</p>
     <p class="paraContent">Article Title Goes Here and may wrap to two lines.</p>
   </div>
   <div class="square">
+    <a href="#"><img src = "#"/></a>
     <p class="scrim dateContent">May 1, 2018</p>
     <p class="paraContent">Article Title Goes Here and may wrap to two lines.</p>
   </div>
