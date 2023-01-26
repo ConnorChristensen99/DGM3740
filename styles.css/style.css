@@ -51,9 +51,7 @@ nav ul {
     max-width: 1280px;
     margin: auto;
   }
-  nav ul li {
-    float: left;
-  }
+
   nav ul li a {
     display: block;
     color: rgb(14, 1, 1);
@@ -198,6 +196,33 @@ nav ul {
   #subList {
     display: none;
   }
+  #primaryNav li.parent > a::after {
+    content: "\25bc";
+    float: right;
+    font-size: .75rem;
+  }
+  #primaryNav:hover ul {
+    display: block;
+  }
+  nav ul li{
+    float: left;
+  }
+#subList li {
+  float: none;
+  list-style: none;
+  border-left: 1px solid rgba(0,0,0,.2);
+}
+#subList li a {
+  display: block;
+  background: none;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+#subList li a:hover {
+  background-color: azure;
+}
+
+
 }
 
 @media (min-width: 468px) and (max-width: 1199px){
@@ -214,6 +239,17 @@ nav ul {
   }
   #subList {
     display: none;
+  }
+  #primaryNav li.parent > a::after {
+    content: "\25bc";
+    float: right;
+    font-size: .75rem;
+  }
+  #primaryNav:hover ul {
+    display: block;
+  }
+  nav ul li {
+    float: left;
   }
 }
 
