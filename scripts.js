@@ -23,5 +23,3 @@ function toggleMenu() {
 var x = document.getElementById('hamburgerBtn');
 
 x.onclick = toggleMenu;
-
-

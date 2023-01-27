@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabot Cruizes</title>
+    <title>Cabot Cruises</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -16,13 +16,14 @@
 
 <!-- Header -->
 <div id="header">
-  <h1>Cabot Cruises</h1>
+  <div id="nameLogo">
+  <h1>Cabot </br>Cruises</h1>
   <figure class="logo">
-    <img id="headerLogo" src="images/logo_1x.png" alt="logo"
-    srcset="images/logo_1x.png 1x, images/logo_2x.png 2x, images/logo_3x.png 3x">
+    <a href="#"><img id="headerLogo" src="images/logo_1x.png" alt="logo"
+    srcset="images/logo_1x.png 1x, images/logo_2x.png 2x, images/logo_3x.png 3x"></a>
   </figure>
-
-<p >1-800-555-1234</p>
+</div>
+<a href="tel:18005551234"><p>1-800-555-1234</p></a>
 </div>
 
 <!-- NAV -->
@@ -38,18 +39,21 @@
   </button>
   
     <ul id="primaryNav">
-    <li><a href="#">Home</a></li>
-    <li class="parent"><a href="#">Cruises</a></li>
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Cruises</a></li>
+    <li class="parent" id="parent"><a href="#">Agents</a></li>
     <ul id="subList">
-      <li id="items"><a href="#">Sub Option 1</a></li>
-      <li id="items"><a href="#">Sub Option 2</a></li>
+      <li id="items" class="items"><a href="#">Sub Option 1</a></li>
+      <li id="item" class="items"><a href="#">Sub Option 2</a></li>
     </ul>
-    <li><a href="#">Agents</a></li>
     <li><a href="#">Book</a></li>
     </ul>
   </nav>
 
-  <input id = "searchBar" type="search" placeholder="Search..">
+  <form>
+  <input class = "searchBar" type="search" placeholder="Search..">
+  <button class="searchButton" type="submit"><i class="fa fa-search"></i></button>
+</form>
 </div>
 
 </div>
@@ -80,24 +84,28 @@
 
 
   <div class="square">
-    <!-- <a href="#"><img src = "images/family_fun.jpg"/></a> -->
-    <p class="scrim dateContent">May 1, 2018</p>
-    <p class="paraContent">Fun For All Families</p>
+    <a href="#"><img src = "images/family_fun.png"/></a>
+    <p class="paraContent scrim">Fun For All Families</p>
+    <p class="scrim dateContent bottomLine">May 1, 2018</p>
+
   </div>
   <div class="square">
-    <!-- <a href="#"><img src = "images/snorkeling.jpg"/></a> -->
+    <a href="#"><img src = "images/snorkeling.png"/></a>
+    <p class="paraContent scrim">Snorkeling Adventure</p>
     <p class="scrim dateContent">May 1, 2018</p>
-    <p class="paraContent">Snorkeling Adventure</p>
+
   </div>
   <div class="square">
-    <!-- <a href="#"><img src = "/images/dining.png"/></a> -->
+     <a href="#"><img src = "/images/dining.png"/></a>
+    <p class="paraContent scrim">Dining Options</p>
     <p class="scrim dateContent">May 1, 2018</p>
-    <p class="paraContent">Dining Options</p>
+
   </div>
   <div class="square">
-    <!-- <a href="#"><img src = "/images/excursion.jpg"/></a> -->
+    <a href="#"><img src = "/images/excursion.png"/></a>
+    <p class="paraContent scrim">Excursion Need to Knows</p>
     <p class="scrim dateContent">May 1, 2018</p>
-    <p class="paraContent">Excursion Need to Knows</p>
+
   </div>
 
 </div>
@@ -111,18 +119,18 @@
   <div id="contactUs" class="column">
     <h1 id="footerHead">Contact Us</h1></br>
     <h2>CABOT CRUIZES</h2>
-    <h4 id="footerPara">23 South Main St. Suite 16 <br>
-      Lexington, VA 24450</h4>
+    <a href="https://www.google.com/maps/dir/40.2760545,-111.7018452/1355+Sandhill+Rd,+Orem,+UT+84058"><h4 id="footerPara">1355 Sandhill Rd, <br>
+      Orem, UT 84058</h4></a>
       <h2>Phone:</h2>
-      <h4 id="footerPara">1-800-555-1234</h4>
+      <a href="tel:18005551234"><h4 id="footerPara">1-800-555-1234</h4></a>
       <h2>Hours of Operation:</h2>
       <h4 id="footerPara">Monday - Friday 9am - 4pm</h4>
   </div>
 
   <div id="newsLetter" class="column">
     <h1 id="footerHead">News Letter</h1></br>
-    <p>Subscribe to our email list and stay up-to-date with our
-      ho6est offers and latest specials.</p>
+    <p>Subscribe to our email list and stay up-to-date</br> with our
+      hotest offers and latest specials.</p>
       <div id="newsLetterItems">
       <input id = "newsLetterInput" type="text" placeholder="example@example.com">
       <button type ="submit" id="subscribeButton">Subscribe</button>
@@ -145,11 +153,11 @@
 
 <!-- SOCIAL ICONS -->
 <div id="socialIcons">
-  <a href="#" class="fa fa-facebook"></a>
-  <a href="#" class="fa fa-youtube"></a>
-  <a href="#" class="fa fa-instagram"></a>
-  <a href="#" class="fa fa-pinterest"></a>
-  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-facebook fas"></a>
+  <a href="#" class="fa fa-youtube fas"></a>
+  <a href="#" class="fa fa-instagram fas"></a>
+  <a href="#" class="fa fa-pinterest fas"></a>
+  <a href="#" class="fa fa-twitter fas"></a>
 </div>
 </main>
 
