@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="styles.css/style.css">
+    <link rel="stylesheet" href="scss/styles.css">
 </head>
 
 
@@ -18,10 +18,11 @@
 <div id="header">
   <div id="nameLogo">
   <h1>Cabot </br>Cruises</h1>
-  <figure class="logo">
-    <a href="#"><img id="headerLogo" src="images/logo_1x.png" alt="logo"
-    srcset="images/logo_1x.png 1x, images/logo_2x.png 2x, images/logo_3x.png 3x"></a>
-  </figure>
+  <picture class="logo">
+    <source srcset="images/logo_1x.png" media="(min-width: 1200px)" />
+    <source srcset="images/logo_2x.png" media="(min-width: 800px)" />
+    <img src="images/logo_3x.png"/>
+    </picture>
 </div>
 <a href="tel:18005551234"><p>1-800-555-1234</p></a>
 </div>
@@ -34,8 +35,8 @@
 <nav>
 
   <button id="hamburgerBtn">
-    <span><i>&equiv;</i>OPEN</span>
-    <span><i>&otimes;</i>CLOSE</span>
+    <span class="smallNav"><i>&equiv;</i> View Pages</span>
+    <span class="smallNav"><i>&chi;</i> CLOSE</span>
   </button>
   
     <ul id="primaryNav">
@@ -44,13 +45,13 @@
     <li class="parent" id="parent"><a href="#">Agents</a></li>
     <ul id="subList">
       <li id="items" class="items"><a href="#">Sub Option 1</a></li>
-      <li id="item" class="items"><a href="#">Sub Option 2</a></li>
+      <li id="items" class="items"><a href="#">Sub Option 2</a></li>
     </ul>
     <li><a href="#">Book</a></li>
     </ul>
   </nav>
 
-  <form>
+  <form id="form">
   <input class = "searchBar" type="search" placeholder="Search..">
   <button class="searchButton" type="submit"><i class="fa fa-search"></i></button>
 </form>
@@ -66,10 +67,33 @@
   <div class="swiper-wrapper">
 
     <!-- Slides -->
-    <div class="swiper-slide"><img src="images/headers/header_large/header_1_large.jpg"></div>
-    <div class="swiper-slide"><img src="images/headers/header_large/header_2_large.jpg"></div>
-    <div class="swiper-slide"><img src="images/headers/header_large/header_3_large.jpg"></div>
-    <div class="swiper-slide"><img src="images/headers/header_large/header_4_large.jpg"></div>
+<div class="swiper-slide">
+    <picture>
+    <source srcset="images/headers/header_large/header_1_large.jpg" media="(min-width: 800px)" />
+    <img src="images/headers/header_small/header_1_small.jpg">
+  </picture>
+</div>
+    
+<div class="swiper-slide">
+  <picture>
+  <source srcset="images/headers/header_large/header_2_large.jpg" media="(min-width: 800px)" />
+  <img src="images/headers/header_small/header_2_small.jpg">
+</picture>
+</div>
+
+<div class="swiper-slide">
+  <picture>
+  <source srcset="images/headers/header_large/header_3_large.jpg" media="(min-width: 800px)" />
+  <img src="images/headers/header_small/header_3_small.jpg">
+</picture>
+</div>
+
+<div class="swiper-slide">
+  <picture>
+  <source srcset="images/headers/header_large/header_4_large.jpg" media="(min-width: 800px)" />
+  <img src="images/headers/header_small/header_4_small.png">
+</picture>
+</div>
   </div>
 
   <div class="swiper-pagination"></div>
@@ -132,7 +156,7 @@
     <p>Subscribe to our email list and stay up-to-date</br> with our
       hotest offers and latest specials.</p>
       <div id="newsLetterItems">
-      <input id = "newsLetterInput" type="text" placeholder="example@example.com">
+      <input id = "newsLetterInput" type="text" placeholder="example@example.com" required>
       <button type ="submit" id="subscribeButton">Subscribe</button>
     </div>
   </div>
@@ -163,7 +187,7 @@
 
 <!-- FINAL FOOTER -->
 <footer>
-<p id="myFooter"> &copy Connor Christensen</p>
+<p id="myFooter"> &copy Connor Christensen - <a href="https://aesthetic-figolla-58fa69.netlify.app/">Check out my Portfolio</a></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

@@ -1,0 +1,91 @@
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+  }
+  #hamburgerBtn span:nth-child(2) {
+    display: none;
+  }
+  
+  #hamburgerBtn.open span:nth-child(1) {
+    display: none;
+  }
+  #hamburgerBtn.open span:nth-child(2) {
+    display: block;
+  }
+  #header {
+        padding-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+  }
+  #header a {
+    text-decoration: none;
+      list-style-type: none;
+      color: black;
+      font-size: x-large;
+  }
+
+  #primaryNav {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #ace4fc;
+  }
+  #primaryNav li {
+    padding: 5%;
+    border: 1px solid grey;
+  }
+  #primaryNav li a {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+  }
+  #primaryNav.open {
+    height: auto;
+  }
+ #subList {
+    width: 100vw;
+    background-color: cornflowerblue;
+    
+  }
+  #subList li {
+    border-bottom: 1px solid black;
+    color: black;
+  }
+  #nameLogo {
+    display: flex;
+    padding: .25rem;
+    margin: .25rem;
+  }
+  #nameLogo h1 {
+    align-self: flex-end;
+  }
+
+  #primaryNav li.parent > a::after {
+    content: "\25bc";
+    float: right;
+    font-size: .75rem;
+  }
+  #navItems {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+  }
+  #form {
+    display: none;
+  }
+  .smallNav {
+    color: black;
+    background-color: #c4f4fc;
+    border: none;
+    font-size: large;
+    padding: .5rem;
+    display: flex;
+    width: 100vw;
+    
+  }
+  .smallNav a {
+    text-decoration: none;
+    color: black;
+  }

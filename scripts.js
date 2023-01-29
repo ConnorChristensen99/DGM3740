@@ -23,3 +23,15 @@ function toggleMenu() {
 var x = document.getElementById('hamburgerBtn');
 
 x.onclick = toggleMenu;
+
+let parent = document.getElementById('parent')
+let subList = document.getElementById('subList')
+subList.classList.add('invisible')
+
+parent.addEventListener('click', () => {
+  if (subList.classList.contains('invisible')) {
+    subList.classList.remove('invisible')
+  }else
+  subList.classList.add('invisible')
+})
+
