@@ -13,7 +13,11 @@
     z-index: 100;
     position: absolute;
     background-color: #4389a7;
-    top: 184px;
+    top: 183px;
+    left: 483px;
+  }
+  #subList li {
+    border-bottom: 1px solid black;
   }
   #primaryNav li.parent > a::after {
     content: "\25bc";
@@ -33,19 +37,18 @@
   justify-content: space-between;
 }
 #header {
-  
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding: .5rem .5rem .5rem .5rem;
+}
+#headerWrapper {
+  width: 100%;
+  background-color: rgb(243, 243, 243);
 }
 #navHeader {
   width: 100%;
   background-color: #6baeec;
-}
-
-#header {
-    padding: .5rem .5rem .5rem .5rem;
-    
 }
 #header p {
     font-size: xx-large;

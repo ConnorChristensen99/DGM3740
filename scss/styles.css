@@ -7,7 +7,8 @@
 /* RESET */
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Rubik', sans-serif; }
 
 /* MAIN STYLING */
 #header, #body, #navItems, #myFooter, #innerFooter {
@@ -147,7 +148,7 @@
 :root {
   --main-grey: rgba(100, 98, 98, 0.8); }
 
-@media only screen and (max-width: 467px) {
+@media only screen and (max-width: 514px) {
   #hamburgerBtn span:nth-child(1) {
     display: block; }
 
@@ -233,7 +234,7 @@
   .smallNav a {
     text-decoration: none;
     color: black; } }
-@media only screen and (min-width: 468px) and (max-width: 1199px) {
+@media only screen and (min-width: 515px) and (max-width: 1199px) {
   .square {
     width: 30%; }
 
@@ -247,7 +248,11 @@
     z-index: 100;
     position: absolute;
     background-color: #4389a7;
-    top: 184px; }
+    top: 185px;
+    left: 163px; }
+
+  #subList li {
+    border-bottom: 1px solid black; }
 
   #primaryNav li.parent > a::after {
     content: "\25bc";
@@ -262,16 +267,18 @@
     justify-content: space-between; }
 
   #header {
+    padding: .5rem .5rem .5rem .5rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-end; }
 
+  #headerWrapper {
+    width: 100%;
+    background-color: #f3f3f3; }
+
   #navHeader {
     width: 100%;
     background-color: #6baeec; }
-
-  #header {
-    padding: .5rem .5rem .5rem .5rem; }
 
   #header p {
     font-size: xx-large;
@@ -335,7 +342,11 @@
     z-index: 100;
     position: absolute;
     background-color: #4389a7;
-    top: 184px; }
+    top: 183px;
+    left: 483px; }
+
+  #subList li {
+    border-bottom: 1px solid black; }
 
   #primaryNav li.parent > a::after {
     content: "\25bc";
@@ -355,14 +366,16 @@
   #header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; }
+    align-items: flex-end;
+    padding: .5rem .5rem .5rem .5rem; }
+
+  #headerWrapper {
+    width: 100%;
+    background-color: #f3f3f3; }
 
   #navHeader {
     width: 100%;
     background-color: #6baeec; }
-
-  #header {
-    padding: .5rem .5rem .5rem .5rem; }
 
   #header p {
     font-size: xx-large;
