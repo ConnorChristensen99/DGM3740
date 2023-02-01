@@ -1,3 +1,4 @@
+
 <!-- BEGIN FOOTER -->
 <div id="informationFooter">
   <div id="innerFooter">
