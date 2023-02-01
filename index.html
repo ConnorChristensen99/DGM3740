@@ -7,7 +7,7 @@
     <title>Cabot Cruises</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="scss/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,14 +22,14 @@
 <div id="headerWrapper">
 <div id="header">
   <div id="nameLogo">
-  <h1>Cabot </br>Cruises</h1>
+  <h1>Cabot <br> Cruises</h1>
   <picture class="logo">
-    <source srcset="images/logo_1x.png" media="(min-width: 1200px)" />
-    <source srcset="images/logo_2x.png" media="(min-width: 800px)" />
-    <img src="images/logo_3x.png"/>
+    <source srcset="images/logo_1x.png" media="(min-width: 1200px)">
+    <source srcset="images/logo_2x.png" media="(min-width: 800px)">
+    <img src="images/logo_3x.png" alt="Cabot Cruises Logo">
     </picture>
 </div>
-<a href="tel:18005551234"><p>1-800-555-1234</p></a>
+<a href="tel:18005551234"><h2>1-800-555-1234</h2></a>
 </div>
 </div>
 <!-- NAV -->
@@ -49,23 +49,23 @@
     <li><a href="#">Cruises</a></li>
     <li class="parent" id="parent"><a href="#">Agents</a></li>
     <ul id="subList">
-      <li id="items" class="items"><a href="#">Sub Option 1</a></li>
-      <li id="items" class="items"><a href="#">Sub Option 2</a></li>
+      <li><a href="#">Sub Option 1</a></li>
+      <li><a href="#">Sub Option 2</a></li>
     </ul>
     <li><a href="#">Book</a></li>
     </ul>
   </nav>
 
-  <form id="form">
+  <form id="form" aria-label="search-form">
   <input class = "searchBar" type="search" placeholder="Search..">
-  <button class="searchButton" type="submit"><i class="fa fa-search"></i></button>
+  <button class="searchButton" type="submit"><i class="fa fa-search"></i> </button>
 </form>
 </div>
 
 </div>
 
 <!-- START BODY -->
-<body>
+
 <div id="body">
   <!-- SLIDER OF IMAGES -->
 <div class="swiper">
@@ -74,29 +74,29 @@
     <!-- Slides -->
 <div class="swiper-slide">
     <picture>
-    <source srcset="images/headers/header_large/header_1_large.jpg" media="(min-width: 800px)" />
-    <img src="images/headers/header_small/header_1_small.jpg">
+    <source srcset="images/headers/header_large/header_1_large.jpg" media="(min-width: 800px)">
+    <img src="images/headers/header_small/header_1_small.jpg" alt="Cruise Ship at Night">
   </picture>
 </div>
     
 <div class="swiper-slide">
   <picture>
-  <source srcset="images/headers/header_large/header_2_large.jpg" media="(min-width: 800px)" />
-  <img src="images/headers/header_small/header_2_small.jpg">
+  <source srcset="images/headers/header_large/header_2_large.jpg" media="(min-width: 800px)">
+  <img src="images/headers/header_small/header_2_small.jpg" alt="Cruise Ship out at Sea">
 </picture>
 </div>
 
 <div class="swiper-slide">
   <picture>
-  <source srcset="images/headers/header_large/header_3_large.jpg" media="(min-width: 800px)" />
-  <img src="images/headers/header_small/header_3_small.jpg">
+  <source srcset="images/headers/header_large/header_3_large.jpg" media="(min-width: 800px)">
+  <img src="images/headers/header_small/header_3_small.jpg" alt="Profile view of a Cruise Ship">
 </picture>
 </div>
 
 <div class="swiper-slide">
   <picture>
-  <source srcset="images/headers/header_large/header_4_large.jpg" media="(min-width: 800px)" />
-  <img src="images/headers/header_small/header_4_small.png">
+  <source srcset="images/headers/header_large/header_4_large.jpg" media="(min-width: 800px)">
+  <img src="images/headers/header_small/header_4_small.png" alt="City Skyline in the distance">
 </picture>
 </div>
   </div>
@@ -113,25 +113,25 @@
 
 
   <div class="square">
-    <a href="#"><img src = "images/family_fun.png"/></a>
+    <a href="#"><img src = "images/family_fun.png" alt="Family holding hands and Jumping on the beach."></a>
     <p class="paraContent scrim">Fun For All Families</p>
     <p class="scrim dateContent bottomLine">May 1, 2018</p>
 
   </div>
   <div class="square">
-    <a href="#"><img src = "images/snorkeling.png"/></a>
+    <a href="#"><img src = "images/snorkeling.png" alt="Two Snorkelers under the water."></a>
     <p class="paraContent scrim">Snorkeling Adventure</p>
     <p class="scrim dateContent">May 1, 2018</p>
 
   </div>
   <div class="square">
-     <a href="#"><img src = "/images/dining.png"/></a>
+     <a href="#"><img src = "/images/dining.png" alt="One of our dining room options."></a>
     <p class="paraContent scrim">Dining Options</p>
     <p class="scrim dateContent">May 1, 2018</p>
 
   </div>
   <div class="square">
-    <a href="#"><img src = "/images/excursion.png"/></a>
+    <a href="#"><img src = "/images/excursion.png" alt="Happy tourist out on an excursion."></a>
     <p class="paraContent scrim">Excursion Need to Knows</p>
     <p class="scrim dateContent">May 1, 2018</p>
 
@@ -146,34 +146,34 @@
 <div id="informationFooter">
   <div id="innerFooter">
   <div id="contactUs" class="column">
-    <h1 id="footerHead">Contact Us</h1></br>
+    <h1 class="footerHead">Contact Us</h1><br>
     <h2>CABOT CRUIZES</h2>
     <a href="https://www.google.com/maps/dir/40.2760545,-111.7018452/1355+Sandhill+Rd,+Orem,+UT+84058"><h4 id="footerPara">1355 Sandhill Rd, <br>
       Orem, UT 84058</h4></a>
       <h2>Phone:</h2>
       <a href="tel:18005551234"><h4 id="footerPara">1-800-555-1234</h4></a>
       <h2>Hours of Operation:</h2>
-      <h4 id="footerPara">Monday - Friday 9am - 4pm</h4>
+      <h4 class="footerPara">Monday - Friday 9am - 4pm</h4>
   </div>
 
   <div id="newsLetter" class="column">
-    <h1 id="footerHead">News Letter</h1></br>
-    <p>Subscribe to our email list and stay up-to-date</br> with our
+    <h1 class="footerHead">News Letter</h1><br>
+    <p>Subscribe to our email list and stay up-to-date<br> with our
       hotest offers and latest specials.</p>
       <div id="newsLetterItems">
-      <input id = "newsLetterInput" type="text" placeholder="example@example.com" required>
+      <input id = "newsLetterInput" type="text" placeholder="example@example.com" required aria-label="newsletter">
       <button type ="submit" id="subscribeButton">Subscribe</button>
     </div>
   </div>
 
   <div id="whyCabot" class="column">
-    <h1 id="footerHead">Why Cabot Cruises</h1></br>
-    <p id="footerPara">Cabot Cruises is a travel agency providing the best cruise
+    <h1 class="footerHead">Why Cabot Cruises</h1><br>
+    <p class="footerPara">Cabot Cruises is a travel agency providing the best cruise
       deals on our online travel website. We can help you with all
-      inclusive vacaMons including discounted cruises.</br></br>
+      inclusive vacaMons including discounted cruises.<br><br>
       <b>We do not sell travel to residents of Delaware, Iowa,
       Florida, Hawaii and Washington state because those states
-      are just wierd. If you are a resident of one of these states,
+      are just weird. If you are a resident of one of these states,
       call your congressman and tell them to change the
       regulaMons.</b></p>
   </div>
@@ -182,17 +182,17 @@
 
 <!-- SOCIAL ICONS -->
 <div id="socialIcons">
-  <a href="#" class="fa fa-facebook fas"></a>
-  <a href="#" class="fa fa-youtube fas"></a>
-  <a href="#" class="fa fa-instagram fas"></a>
-  <a href="#" class="fa fa-pinterest fas"></a>
-  <a href="#" class="fa fa-twitter fas"></a>
+  <a href="https://www.facebook.com/" class="fa fa-facebook fas"></a>
+  <a href="https://www.youtube.com/results?search_query=cruise+ships" class="fa fa-youtube fas"></a>
+  <a href="https://www.instagram.com/" class="fa fa-instagram fas"></a>
+  <a href="https://www.pinterest.com/" class="fa fa-pinterest fas"></a>
+  <a href="https://twitter.com/" class="fa fa-twitter fas"></a>
 </div>
 </main>
 
 <!-- FINAL FOOTER -->
 <footer>
-<p id="myFooter"> &copy Connor Christensen 2023- <a href="https://aesthetic-figolla-58fa69.netlify.app/">Check out my Portfolio</a></p>
+<p id="myFooter"> &copyConnor Christensen 2023- <a href="https://aesthetic-figolla-58fa69.netlify.app/">Check out my Portfolio</a></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -217,7 +217,4 @@
       "priceRange": "$500 - $4000"
   }
   </script>
-
-  
-</body>
 </html>

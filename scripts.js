@@ -43,4 +43,18 @@ parent.addEventListener('mouseout', () => {
   subList.classList.add('invisible')
   subList.style.display = "none"
 })
-
+subList.addEventListener('mouseover', () => {
+  if (subList.classList.contains('invisible')) {
+    subList.classList.remove('invisible')
+  }else
+  subList.classList.add('invisible')
+  subList.style.display = "flex"
+  subList.style.flexDirection = "column"
+})
+subList.addEventListener('mouseout', () => {
+  if (subList.classList.contains('invisible')) {
+    subList.classList.remove('invisible')
+  }else
+  subList.classList.add('invisible')
+  subList.style.display = "none"
+})
