@@ -45,16 +45,16 @@
   </button>
   
     <ul id="primaryNav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="pages/cruises.html">Cruises</a></li>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="cruises.php">Cruises</a></li>
     <li class="parent" id="parent"><a href="#">Agents</a>
       <ul id="subList">
-        <li><a href="pages/agent1.html">Sub Option 1</a></li>
-        <li><a href="pages/agent2.html">Sub Option 2</a></li>
+        <li><a href="agent1.php">Sub Option 1</a></li>
+        <li><a href="agent2.php">Sub Option 2</a></li>
       </ul>
     </li>
     
-    <li><a href="pages/booking.html">Book</a></li>
+    <li><a href="booking.php">Book</a></li>
     </ul>
   </nav>
 
