@@ -47,18 +47,20 @@
     <ul id="primaryNav">
     <li class="active"><a href="#">Home</a></li>
     <li><a href="#">Cruises</a></li>
-    <li class="parent" id="parent"><a href="#">Agents</a></li>
-    <ul id="subList">
-      <li><a href="#">Sub Option 1</a></li>
-      <li><a href="#">Sub Option 2</a></li>
-    </ul>
+    <li class="parent" id="parent"><a href="#">Agents</a>
+      <ul id="subList">
+        <li><a href="#">Sub Option 1</a></li>
+        <li><a href="#">Sub Option 2</a></li>
+      </ul>
+    </li>
+    
     <li><a href="#">Book</a></li>
     </ul>
   </nav>
 
   <form id="form" aria-label="search-form">
-  <input class = "searchBar" type="search" placeholder="Search..">
-  <button class="searchButton" type="submit"><i class="fa fa-search"></i> </button>
+  <input class = "searchBar" type="search" placeholder="Search.." aria-label="search-input">
+  <button class="searchButton" type="submit" aria-label="form-search"><i class="fa fa-search"></i></button>
 </form>
 </div>
 
@@ -148,10 +150,10 @@
   <div id="contactUs" class="column">
     <h1 class="footerHead">Contact Us</h1><br>
     <h2>CABOT CRUIZES</h2>
-    <a href="https://www.google.com/maps/dir/40.2760545,-111.7018452/1355+Sandhill+Rd,+Orem,+UT+84058"><h4 id="footerPara">1355 Sandhill Rd, <br>
+    <a href="https://www.google.com/maps/dir/40.2760545,-111.7018452/1355+Sandhill+Rd,+Orem,+UT+84058"><h4 class="footerPara">1355 Sandhill Rd, <br>
       Orem, UT 84058</h4></a>
       <h2>Phone:</h2>
-      <a href="tel:18005551234"><h4 id="footerPara">1-800-555-1234</h4></a>
+      <a href="tel:18005551234"><h4 class="footerPara">1-800-555-1234</h4></a>
       <h2>Hours of Operation:</h2>
       <h4 class="footerPara">Monday - Friday 9am - 4pm</h4>
   </div>
@@ -182,17 +184,17 @@
 
 <!-- SOCIAL ICONS -->
 <div id="socialIcons">
-  <a href="https://www.facebook.com/" class="fa fa-facebook fas"></a>
-  <a href="https://www.youtube.com/results?search_query=cruise+ships" class="fa fa-youtube fas"></a>
-  <a href="https://www.instagram.com/" class="fa fa-instagram fas"></a>
-  <a href="https://www.pinterest.com/" class="fa fa-pinterest fas"></a>
-  <a href="https://twitter.com/" class="fa fa-twitter fas"></a>
+  <a href="https://www.facebook.com/" class="fa fa-facebook fas" aria-label="facebook-logo"></a>
+  <a href="https://www.youtube.com/results?search_query=cruise+ships" class="fa fa-youtube fas" aria-label="youtube-logo"></a>
+  <a href="https://www.instagram.com/" class="fa fa-instagram fas" aria-label="instagram-logo"></a>
+  <a href="https://www.pinterest.com/" class="fa fa-pinterest fas" aria-label="pinterest-logo"></a>
+  <a href="https://twitter.com/" class="fa fa-twitter fas" aria-label="twitter-logo"></a>
 </div>
 </main>
 
 <!-- FINAL FOOTER -->
 <footer>
-<p id="myFooter"> &copyConnor Christensen 2023- <a href="https://aesthetic-figolla-58fa69.netlify.app/">Check out my Portfolio</a></p>
+<p id="myFooter"> &copy; Connor Christensen 2023- <a href="https://aesthetic-figolla-58fa69.netlify.app/">Check out my Portfolio</a></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
