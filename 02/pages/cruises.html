@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="stylesheet" href="../scss/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +24,8 @@
   <div id="nameLogo">
   <h1>Cabot <br> Cruises</h1>
   <picture class="logo">
-    <source srcset="images/logo_1x.png" media="(min-width: 1200px)">
-    <source srcset="images/logo_2x.png" media="(min-width: 800px)">
+    <source srcset="../images/logo_1x.png" media="(min-width: 1200px)">
+    <source srcset="../images/logo_2x.png" media="(min-width: 800px)">
     <img src="images/logo_3x.png" alt="Cabot Cruises Logo">
     </picture>
 </div>
@@ -37,26 +37,26 @@
 <div id="navHeader">
  
   <div id="navItems">
-<nav>
+    <nav>
 
-  <button id="hamburgerBtn">
-    <span class="smallNav"><i>&equiv;</i> View Pages</span>
-    <span class="smallNav"><i>&chi;</i> CLOSE</span>
-  </button>
-  
-    <ul id="primaryNav">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Cruises</a></li>
-    <li class="parent" id="parent"><a href="#">Agents</a>
-      <ul id="subList">
-        <li><a href="#">Sub Option 1</a></li>
-        <li><a href="#">Sub Option 2</a></li>
-      </ul>
-    </li>
-    
-    <li><a href="#">Book</a></li>
-    </ul>
-  </nav>
+        <button id="hamburgerBtn">
+          <span class="smallNav"><i>&equiv;</i> View Pages</span>
+          <span class="smallNav"><i>&chi;</i> CLOSE</span>
+        </button>
+        
+          <ul id="primaryNav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="cruises.html">Cruises</a></li>
+          <li class="parent" id="parent"><a href="#">Agents</a>
+            <ul id="subList">
+              <li><a href="agent1.html">Sub Option 1</a></li>
+              <li><a href="agent2.html">Sub Option 2</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="booking.html">Book</a></li>
+          </ul>
+        </nav>
 
   <form id="form" aria-label="search-form">
   <input class = "searchBar" type="search" placeholder="Search.." aria-label="search-input">
@@ -69,77 +69,7 @@
 <!-- START BODY -->
 
 <div id="body">
-  <!-- SLIDER OF IMAGES -->
-<div class="swiper">
-  <div class="swiper-wrapper">
-
-    <!-- Slides -->
-<div class="swiper-slide">
-    <picture>
-    <source srcset="images/headers/header_large/header_1_large.jpg" media="(min-width: 800px)">
-    <img src="images/headers/header_small/header_1_small.jpg" alt="Cruise Ship at Night">
-  </picture>
-</div>
-    
-<div class="swiper-slide">
-  <picture>
-  <source srcset="images/headers/header_large/header_2_large.jpg" media="(min-width: 800px)">
-  <img src="images/headers/header_small/header_2_small.jpg" alt="Cruise Ship out at Sea">
-</picture>
-</div>
-
-<div class="swiper-slide">
-  <picture>
-  <source srcset="images/headers/header_large/header_3_large.jpg" media="(min-width: 800px)">
-  <img src="images/headers/header_small/header_3_small.jpg" alt="Profile view of a Cruise Ship">
-</picture>
-</div>
-
-<div class="swiper-slide">
-  <picture>
-  <source srcset="images/headers/header_large/header_4_large.jpg" media="(min-width: 800px)">
-  <img src="images/headers/header_small/header_4_small.png" alt="City Skyline in the distance">
-</picture>
-</div>
-  </div>
-
-  <div class="swiper-pagination"></div>
-  </div>
-
-
-    
-  <!-- START ARTICLE SQUARES -->
-  <h2 id="articleHeader">Recent Blog Articles</h2>
-
-  <div id="articleSquares">
-
-
-  <div class="square">
-    <a href="#"><img src = "images/family_fun.png" alt="Family holding hands and Jumping on the beach."></a>
-    <p class="paraContent scrim">Fun For All Families</p>
-    <p class="scrim dateContent bottomLine">May 1, 2018</p>
-
-  </div>
-  <div class="square">
-    <a href="#"><img src = "images/snorkeling.png" alt="Two Snorkelers under the water."></a>
-    <p class="paraContent scrim">Snorkeling Adventure</p>
-    <p class="scrim dateContent">May 1, 2018</p>
-
-  </div>
-  <div class="square">
-     <a href="#"><img src = "/images/dining.png" alt="One of our dining room options."></a>
-    <p class="paraContent scrim">Dining Options</p>
-    <p class="scrim dateContent">May 1, 2018</p>
-
-  </div>
-  <div class="square">
-    <a href="#"><img src = "/images/excursion.png" alt="Happy tourist out on an excursion."></a>
-    <p class="paraContent scrim">Excursion Need to Knows</p>
-    <p class="scrim dateContent">May 1, 2018</p>
-
-  </div>
-
-</div>
+  <h1>IN PROGRESS - CRUISES</h1>
 
 </div>
 
@@ -198,7 +128,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="scripts.js"></script>
+<script src="../scripts.js"></script>
 
 <script type ="application/ld+json">
   {
