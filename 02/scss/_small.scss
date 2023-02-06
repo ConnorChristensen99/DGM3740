@@ -1,3 +1,4 @@
+// SUBLIST NAV STYLING
 #hamburgerBtn span:nth-child(1) {
     display: block;
   }
@@ -11,11 +12,13 @@
   #hamburgerBtn.open span:nth-child(2) {
     display: block;
   }
+
+
+  // BEGIN HEADER STYLING
   #header {
         padding-top: 3rem;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+        justify-content: center;
   }
   #header a {
     text-decoration: none;
@@ -23,7 +26,16 @@
       color: black;
       font-size: x-large;
   }
+  #nameLogo {
+    display: flex;
+    padding: .25rem;
+    margin: .25rem;
+  }
+  #nameLogo h1 {
+    align-self: flex-end;
+  }
 
+// BEGIN NAV STYLING
   #primaryNav {
     height: 0;
     overflow: hidden;
@@ -55,15 +67,6 @@
     display: block;
     margin-top: 10px;
   }
-  #nameLogo {
-    display: flex;
-    padding: .25rem;
-    margin: .25rem;
-  }
-  #nameLogo h1 {
-    align-self: flex-end;
-  }
-
   #primaryNav li.parent > a::after {
     content: "\25bc";
     float: right;
@@ -92,7 +95,33 @@
     text-decoration: none;
     color: black;
   }
+  #telephone {
+    display: none;
+  }
+
+
+  //BEGIN BODY STYLING
   .swiper-slide picture {
     display: flex;
     justify-content: center;
+  }
+  .cruisesImage {
+    border: 1px solid black;
+  }
+  #cruiseSelectionSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+  }
+  #cruiseSelectionSection h4, #cruiseSelectionSection h3{
+    font-size: x-large;
+  }
+  #cruiseSelectionSection button {
+    border-radius: 20px;
+    padding: 3%;
+    width: 100%;
+    margin-top: 2%;
+    display: block;
+    font-size: large;
   }

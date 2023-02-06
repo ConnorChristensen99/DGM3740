@@ -29,7 +29,7 @@
     <img src="images/logo_3x.png" alt="Cabot Cruises Logo">
     </picture>
 </div>
-<a href="tel:18005551234"><h2>1-800-555-1234</h2></a>
+<a href="tel:18005551234"><h2 id="telephone">1-800-555-1234</h2></a>
 </div>
 </div>
 <!-- NAV -->
