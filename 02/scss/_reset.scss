@@ -116,6 +116,7 @@
     border-radius: 10px;
     border: none;
     background-color: #c4f4fc;
+    cursor: pointer;
   }
   #newsLetterInput {
     padding: .5rem;
@@ -157,4 +158,12 @@
 .swiper {
   width: 100%;
   height: auto;
+}
+
+
+
+.indivCruises a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
 }

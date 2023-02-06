@@ -101,7 +101,40 @@ nav ul {
     background-color: #ace4fc;
   }
 
+
+  // BODY STYLING
   .swiper-slide picture source {
     width: 100%;
     height: auto;
+  }
+
+  .indivCruises {
+    display: flex;
+    column-count: 2;
+    column-width: 50%;
+    padding: 2%;
+  }
+  .cruisesImage {
+    border: 1px solid black;
+    margin: 15%;
+    width: 500px;
+  }
+  .cruiseInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5%;
+  }
+  .cruiseButtons:hover {
+    background-color: rgb(243, 224, 199);
+    cursor: pointer;
+  }
+  #cruiseSelectionSection button {
+    border-radius: 20px;
+    width: 25%;
+    padding: 2%;
+    height: auto;
+    margin-top: 2%;
+    display: block;
+    float: right;
   }

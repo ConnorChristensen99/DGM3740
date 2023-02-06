@@ -102,7 +102,8 @@
   margin: .5rem;
   border-radius: 10px;
   border: none;
-  background-color: #c4f4fc; }
+  background-color: #c4f4fc;
+  cursor: pointer; }
 
 #newsLetterInput {
   padding: .5rem; }
@@ -141,6 +142,11 @@
 .swiper {
   width: 100%;
   height: auto; }
+
+.indivCruises a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black; }
 
 :root {
   --main-grey: rgba(100, 98, 98, 0.8); }
@@ -255,11 +261,18 @@
 
   #cruiseSelectionSection button {
     border-radius: 20px;
-    padding: 3%;
+    padding: 2%;
     width: 100%;
     margin-top: 2%;
     display: block;
-    font-size: large; } }
+    font-size: large; }
+
+  .indivCruises {
+    padding-bottom: 5%; }
+
+  .cruiseButtons:hover {
+    background-color: #f3e0c7;
+    cursor: pointer; } }
 @media only screen and (min-width: 515px) and (max-width: 1199px) {
   .square {
     width: 30%; }
@@ -360,7 +373,37 @@
     background-color: #b3b3b3; }
 
   #telephone {
-    display: block; } }
+    display: block; }
+
+  .indivCruises {
+    display: flex;
+    column-count: 2;
+    column-width: 50%;
+    padding: 2%; }
+
+  .cruisesImage {
+    border: 1px solid black;
+    margin: 15%;
+    width: 500px; }
+
+  .cruiseInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5%; }
+
+  .cruiseButtons:hover {
+    background-color: #f3e0c7;
+    cursor: pointer; }
+
+  #cruiseSelectionSection button {
+    border-radius: 20px;
+    width: 25%;
+    padding: 2%;
+    height: auto;
+    margin-top: 2%;
+    display: block;
+    float: right; } }
 @media (min-width: 1200px) {
   .square {
     width: 20%; }
@@ -459,6 +502,36 @@
 
   .swiper-slide picture source {
     width: 100%;
-    height: auto; } }
+    height: auto; }
+
+  .indivCruises {
+    display: flex;
+    column-count: 2;
+    column-width: 50%;
+    padding: 2%; }
+
+  .cruisesImage {
+    border: 1px solid black;
+    margin: 15%;
+    width: 500px; }
+
+  .cruiseInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5%; }
+
+  .cruiseButtons:hover {
+    background-color: #f3e0c7;
+    cursor: pointer; }
+
+  #cruiseSelectionSection button {
+    border-radius: 20px;
+    width: 25%;
+    padding: 2%;
+    height: auto;
+    margin-top: 2%;
+    display: block;
+    float: right; } }
 
 /*# sourceMappingURL=styles.css.map */

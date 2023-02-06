@@ -119,9 +119,17 @@
   }
   #cruiseSelectionSection button {
     border-radius: 20px;
-    padding: 3%;
+    padding: 2%;
     width: 100%;
     margin-top: 2%;
     display: block;
     font-size: large;
   }
+  .indivCruises {
+    padding-bottom: 5%;
+  }
+.cruiseButtons:hover {
+  background-color: rgb(243, 224, 199);
+  cursor: pointer;
+}
+
