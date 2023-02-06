@@ -1,3 +1,7 @@
+
+
+
+// SWIPER STYLING
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -13,7 +17,15 @@ const swiper = new Swiper('.swiper', {
         delay: 5000
     },
 })
+//////////////////////////////////////////////////////
 
+
+
+
+
+
+
+// NAV MENU SUBLIST
 function toggleMenu() {
   document.getElementById("hamburgerBtn").classList.toggle('open');
   document.getElementById('primaryNav').classList.toggle('open')
@@ -58,3 +70,18 @@ subList.addEventListener('mouseout', () => {
   subList.classList.add('invisible')
   subList.style.display = "none"
 })
+//////////////////////////////////////////////////////////////
+
+
+
+
+
+//ACTIVE NAV STYLING
+let nav = document.getElementById('primaryNav').getElementsByTagName('a')
+for(i=0;i<nav.length;i++) {
+  if(document.location.href.indexOf(nav[i].href)>=0) {
+    nav[i].className='active';
+  }
+}
+
+

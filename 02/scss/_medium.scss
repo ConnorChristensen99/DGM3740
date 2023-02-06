@@ -13,8 +13,6 @@
     z-index: 100;
     position: absolute;
     background-color: #4389a7;
-    top: 185px;
-    left: 163px;
   }
   #subList li {
     border-bottom: 1px solid black;
@@ -96,4 +94,11 @@ nav ul {
   }
   nav ul li a:hover {
     background-color: #ace4fc;
+  }
+  .swiper-slide picture {
+    display: flex;
+    justify-content: center;
+  }
+  .swiper-slide {
+    background-color: rgb(179, 179, 179);
   }

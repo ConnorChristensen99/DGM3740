@@ -18,7 +18,7 @@
 /* PRE NAV STYLING */
 /* BODY STYLING */
 #articleHeader {
-  padding-top: .5rem; }
+  padding: .5rem; }
 
 #articleSquares {
   display: flex;
@@ -81,7 +81,8 @@
 #informationFooter {
   background-color: #6baeec;
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  padding: 2%; }
 
 .footerHead {
   padding-top: .5rem; }
@@ -141,10 +142,6 @@
   width: 100%;
   height: auto; }
 
-.swiper-slide picture {
-  display: flex;
-  justify-content: center; }
-
 :root {
   --main-grey: rgba(100, 98, 98, 0.8); }
 
@@ -198,7 +195,10 @@
 
   #subList li {
     border-bottom: 1px solid black;
-    color: black; }
+    color: black;
+    list-style-type: none;
+    display: block;
+    margin-top: 10px; }
 
   #nameLogo {
     display: flex;
@@ -233,7 +233,11 @@
 
   .smallNav a {
     text-decoration: none;
-    color: black; } }
+    color: black; }
+
+  .swiper-slide picture {
+    display: flex;
+    justify-content: center; } }
 @media only screen and (min-width: 515px) and (max-width: 1199px) {
   .square {
     width: 30%; }
@@ -247,9 +251,7 @@
   #subList {
     z-index: 100;
     position: absolute;
-    background-color: #4389a7;
-    top: 185px;
-    left: 163px; }
+    background-color: #4389a7; }
 
   #subList li {
     border-bottom: 1px solid black; }
@@ -326,7 +328,14 @@
     text-decoration: none; }
 
   nav ul li a:hover {
-    background-color: #ace4fc; } }
+    background-color: #ace4fc; }
+
+  .swiper-slide picture {
+    display: flex;
+    justify-content: center; }
+
+  .swiper-slide {
+    background-color: #b3b3b3; } }
 @media (min-width: 1200px) {
   .square {
     width: 20%; }
@@ -341,9 +350,7 @@
   #subList {
     z-index: 100;
     position: absolute;
-    background-color: #4389a7;
-    top: 183px;
-    left: 483px; }
+    background-color: #4389a7; }
 
   #subList li {
     border-bottom: 1px solid black; }
@@ -423,6 +430,10 @@
     text-decoration: none; }
 
   nav ul li a:hover {
-    background-color: #ace4fc; } }
+    background-color: #ace4fc; }
+
+  .swiper-slide picture source {
+    width: 100%;
+    height: auto; } }
 
 /*# sourceMappingURL=styles.css.map */

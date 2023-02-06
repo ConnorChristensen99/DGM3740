@@ -51,6 +51,9 @@
   #subList li {
     border-bottom: 1px solid black;
     color: black;
+    list-style-type: none;
+    display: block;
+    margin-top: 10px;
   }
   #nameLogo {
     display: flex;
@@ -88,4 +91,8 @@
   .smallNav a {
     text-decoration: none;
     color: black;
+  }
+  .swiper-slide picture {
+    display: flex;
+    justify-content: center;
   }

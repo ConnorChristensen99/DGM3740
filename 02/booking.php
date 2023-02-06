@@ -1,4 +1,4 @@
-<?php include "_header.php";?>
+<?php $ptitle='Cabot Cruises'; include "_top.php";?>
 
 <!-- START BODY -->
 
@@ -8,4 +8,4 @@
 </div>
 
 
-<?php include "_footer.php";?>
+<?php include "_bot.php";?>

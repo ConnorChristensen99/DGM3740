@@ -1,4 +1,4 @@
-<?php include "_header.php";?>
+<?php $ptitle='Cabot Cruises'; include "_top.php";?>
 
 
 <!-- START BODY -->
@@ -10,29 +10,29 @@
     <!-- Slides -->
 <div class="swiper-slide">
     <picture>
-    <source srcset="images/headers/header_large/header_1_large.jpg" media="(min-width: 800px)">
-    <img src="images/headers/header_small/header_1_small.jpg" alt="Cruise Ship at Night">
+    <source srcset="images/headers/header_large/header_1_large.jpg" media="(min-width: 1200px)">
+    <img class="smallHeader" src="images/headers/header_small/header_1_small.jpg" alt="Cruise Ship at Night">
   </picture>
 </div>
     
 <div class="swiper-slide">
   <picture>
-  <source srcset="images/headers/header_large/header_2_large.jpg" media="(min-width: 800px)">
-  <img src="images/headers/header_small/header_2_small.jpg" alt="Cruise Ship out at Sea">
+  <source srcset="images/headers/header_large/header_2_large.jpg" media="(min-width: 1200px)">
+  <img class="smallHeader" src="images/headers/header_small/header_2_small.jpg" alt="Cruise Ship out at Sea">
 </picture>
 </div>
 
 <div class="swiper-slide">
   <picture>
-  <source srcset="images/headers/header_large/header_3_large.jpg" media="(min-width: 800px)">
-  <img src="images/headers/header_small/header_3_small.jpg" alt="Profile view of a Cruise Ship">
+  <source srcset="images/headers/header_large/header_3_large.jpg" media="(min-width: 1200px)">
+  <img class="smallHeader" src="images/headers/header_small/header_3_small.jpg" alt="Profile view of a Cruise Ship">
 </picture>
 </div>
 
 <div class="swiper-slide">
   <picture>
-  <source srcset="images/headers/header_large/header_4_large.jpg" media="(min-width: 800px)">
-  <img src="images/headers/header_small/header_4_small.png" alt="City Skyline in the distance">
+  <source srcset="images/headers/header_large/header_4_large.jpg" media="(min-width: 1200px)">
+  <img class="smallHeader" src="images/headers/header_small/header_4_small.png" alt="City Skyline in the distance">
 </picture>
 </div>
   </div>
@@ -76,4 +76,4 @@
 </div>
 
 </div>
-<?php include "_footer.php";?>
+<?php include "_bot.php";?>

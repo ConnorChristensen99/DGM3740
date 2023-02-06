@@ -26,7 +26,7 @@
 
   /* BODY STYLING */
   #articleHeader {
-    padding-top: .5rem;
+    padding: .5rem;
   }
   #articleSquares {
     display: flex;
@@ -95,6 +95,7 @@
     background-color: #6baeec;;
     display: flex;
     justify-content: space-evenly;
+    padding: 2%;
   }
   .footerHead {
     padding-top: .5rem;
@@ -156,8 +157,4 @@
 .swiper {
   width: 100%;
   height: auto;
-}
-.swiper-slide picture {
-  display: flex;
-  justify-content: center;
 }
