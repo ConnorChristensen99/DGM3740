@@ -3,7 +3,7 @@
 <!-- START BODY -->
 
 <div id="body">
-  <h1>IN PROGRESS - BOOKING</h1>
+  <h1 class='headerTitle'>IN PROGRESS - BOOKING</h1>
 
 </div>
 

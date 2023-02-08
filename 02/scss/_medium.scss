@@ -1,3 +1,4 @@
+// HEADER STYLING
 .square {
     width: 30%;
   }
@@ -8,26 +9,6 @@
 
   #hamburgerBtn {
     display: none;
-  }
-  #subList {
-    z-index: 100;
-    position: absolute;
-    background-color: #4389a7;
-  }
-  #subList li {
-    border-bottom: 1px solid black;
-  }
-  #primaryNav li.parent > a::after {
-    content: "\25bc";
-    float: right;
-    font-size: .75rem;
-  }
-  nav ul li {
-    float: left;
-  }
-  #navItems {
-    display: flex;
-    justify-content: space-between;
   }
   #header {
     padding: .5rem .5rem .5rem .5rem;
@@ -105,19 +86,40 @@ nav ul {
   #telephone {
     display: block;
   }
-
+  #subList {
+    z-index: 100;
+    position: absolute;
+    background-color: #4389a7;
+  }
+  #subList li {
+    border-bottom: 1px solid black;
+  }
+  #primaryNav li.parent > a::after {
+    content: "\25bc";
+    float: right;
+    font-size: .75rem;
+  }
+  nav ul li {
+    float: left;
+  }
+  #navItems {
+    display: flex;
+    justify-content: space-between;
+  }
   // BODY STYLING
 
+
+  // CRUISES STYLING
   .indivCruises {
     display: flex;
     column-count: 2;
     column-width: 50%;
-    padding: 2%;
+    padding: 2% 2% 5% 2%;
+    align-items: flex-start;
   }
   .cruisesImage {
-    border: 1px solid black;
-    margin: 15%;
-    width: 500px;
+    width: 300px;
+    height: auto;
   }
   .cruiseInfo {
     display: flex;
@@ -131,10 +133,14 @@ nav ul {
   }
   #cruiseSelectionSection button {
     border-radius: 20px;
-    width: 25%;
+    width: 180px;
     padding: 2%;
     height: auto;
     margin-top: 2%;
     display: block;
     float: right;
   }
+
+
+
+  // AGENT STYLING

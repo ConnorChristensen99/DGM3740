@@ -14,6 +14,7 @@
   }
 
 
+
   // BEGIN HEADER STYLING
   #header {
         padding-top: 3rem;
@@ -35,6 +36,8 @@
     align-self: flex-end;
   }
 
+
+
 // BEGIN NAV STYLING
   #primaryNav {
     height: 0;
@@ -43,7 +46,7 @@
     flex-direction: column;
     background-color: #ace4fc;
   }
-  #primaryNav li {
+  #primaryNav li{
     padding: 5%;
     border: 1px solid grey;
   }
@@ -57,15 +60,12 @@
   }
  #subList {
     width: 100vw;
-    background-color: cornflowerblue;
-    
   }
   #subList li {
-    border-bottom: 1px solid black;
     color: black;
     list-style-type: none;
     display: block;
-    margin-top: 10px;
+    border: none;
   }
   #primaryNav li.parent > a::after {
     content: "\25bc";
@@ -100,13 +100,23 @@
   }
 
 
+
+
+
   //BEGIN BODY STYLING
+
+  // SWIPER STYLING
   .swiper-slide picture {
     display: flex;
     justify-content: center;
   }
+
+
+  // CRUISES STYLING
   .cruisesImage {
-    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
   }
   #cruiseSelectionSection {
     display: flex;
@@ -133,3 +143,15 @@
   cursor: pointer;
 }
 
+
+
+
+// AGENT STYLING
+.agentImage {
+  width: 100%;
+  height: auto;
+  padding-top: 2%;
+}
+.agentInformation {
+  padding-left: 2%;
+}

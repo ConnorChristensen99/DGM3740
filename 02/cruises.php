@@ -2,12 +2,12 @@
 <!-- START BODY -->
 
 <div id="body">
-  <h1>Cruises</h1>
-
+  <h1 class='headerTitle'>Cruises</h1>
+<br>
   <div id="cruiseSelectionSection">
 
   <div class="indivCruises">
-    <a href="#"><img class='cruisesImage' src = "#" alt="Cruise 1"></a>
+    <a href="#"><img class='cruisesImage' src = "images/australianCruise.jpg" alt="Australian Cruise Liner"></a>
     <div class='cruiseInfo'>
     <h3>Australia & New Zeland</h3>
     <h4>Cruises from $899!</h4>
@@ -22,7 +22,7 @@
 </div>
 
   <div class="indivCruises">
-    <a href="#"><img class='cruisesImage' src = "#" alt="Cruise 2"></a>
+    <a href="#"><img class='cruisesImage' src = "images/bahamasCruise.jpg" alt="Bahamas Cruise Liner"></a>
     <div class='cruiseInfo'>
     <h3>Bahamas</h3>
     <h4>Cruises from $499!</h4>
@@ -36,7 +36,7 @@
   </div>
 
   <div class="indivCruises">
-    <a href="#"><img class='cruisesImage' src = "#" alt="Cruise 3"></a>
+    <a href="#"><img class='cruisesImage' src = "images/cozumelCruise.jpg" alt="Mexican Cruise Liner"></a>
     <div class='cruiseInfo'>
     <h3>Luxury Cruises to Mexico</h3>
     <h4>Cruises from $1299!</h4>
@@ -45,6 +45,21 @@
        has everything you've ever dreamed of for an unforgettable vacation: 
         white sand beaches, ancient ruins, mouthwatering cuisine, and breathtaking 
         sunsets.</p>
+    <a href="#"><button class="cruiseButtons" type ="button" id="learnMoreCruises">Learn More</button></a>
+  </div>
+  </div>
+
+  <div class="indivCruises">
+    <a href="#"><img class='cruisesImage' src = "images/alaskaCruise.jpg" alt="Alaskan Cruise Liner"></a>
+    <div class='cruiseInfo'>
+    <h3>Alaskan Cruises</h3>
+    <h4>Cruises from $1999!</h4>
+    <p>Everything about Alaska is massive — from the 90-pound cabbages grown in 
+      the Matanuska Valley to the coastline that's longer than all the other U.S. 
+      states combined. North America's tallest peak, Denali, beckons from the center 
+      of the state and its wild, beating heart, Denali National Park. Hike through 
+      this vast wilderness, where taiga forests full of pines and spruce stretch below 
+      the towering peaks. Discover the magic with an Alaska cruise.</p>
     <a href="#"><button class="cruiseButtons" type ="button" id="learnMoreCruises">Learn More</button></a>
   </div>
   </div>
