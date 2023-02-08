@@ -144,3 +144,41 @@ nav ul {
 
 
   // AGENT STYLING
+  .agentImage {
+    float: right;
+    width: 40%;
+    margin: 3%;
+  }
+ 
+
+  //BOOKING STYLING
+  .bookingForm input {
+    max-width: 450px;
+    width: 100%;
+    padding: 1%;
+    margin: 0 3% 3% 3%;
+  }
+  .bookingForm select {
+    width: 475px;
+    padding: 1%;
+    margin: 0 3% 3% 3%;
+  }
+  .bookingForm label {
+    padding-left: 3%;
+    font-size: large;
+    margin-bottom: 1%;
+  }
+  .bookingForm select option {
+    font-size: large;
+  }
+  .bookCruise {
+    width: 40%;
+    padding: 2%;
+    margin: 2% 1% 2% 3%;
+    font-size: large;
+    border-radius: 10px;
+  }
+  .bookCruise:hover {
+    cursor: pointer;
+    background-color: beige;
+  }

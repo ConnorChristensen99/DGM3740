@@ -153,7 +153,7 @@
   opacity: 0.7;
 }
 .headerTitle {
-  padding: 2% 0 0 2%;
+  padding: 2% 0 2% 2%;
 }
 
 /* SLIDER STYLING */
@@ -163,9 +163,21 @@
 }
 
 
-
+// CRUISES STYLING
 .indivCruises a {
   text-decoration: none;
   list-style-type: none;
   color: black;
 }
+
+
+// AGENT STYLING
+.agentImage {
+  border: 1px solid black;
+}
+.agentInformation {
+  padding-left: 2%;
+}
+
+
+//BOOKING STYLING
